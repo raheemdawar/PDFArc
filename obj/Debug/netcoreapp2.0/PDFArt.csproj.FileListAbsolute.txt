@@ -1,0 +1,11 @@
+c:\users\ninja\source\repos\PDFArt\PDFArt\bin\Debug\netcoreapp2.0\PDFArt.deps.json
+c:\users\ninja\source\repos\PDFArt\PDFArt\bin\Debug\netcoreapp2.0\PDFArt.runtimeconfig.json
+c:\users\ninja\source\repos\PDFArt\PDFArt\bin\Debug\netcoreapp2.0\PDFArt.runtimeconfig.dev.json
+c:\users\ninja\source\repos\PDFArt\PDFArt\bin\Debug\netcoreapp2.0\PDFArt.dll
+c:\users\ninja\source\repos\PDFArt\PDFArt\bin\Debug\netcoreapp2.0\PDFArt.pdb
+c:\users\ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.csprojResolveAssemblyReference.cache
+c:\users\ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.csproj.CoreCompileInputs.cache
+c:\users\ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.AssemblyInfoInputs.cache
+c:\users\ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.AssemblyInfo.cs
+c:\users\ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.dll
+c:\users\ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.pdb
