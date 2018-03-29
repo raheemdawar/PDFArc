@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "2d021e63b358ef3ecb7dcd5829d7b8712724e457"
+    "signature": "cd8277c2edce175c4053aa03fcc9695edfacf3e8"
   },
   "compilationOptions": {
     "defines": [
@@ -24,8 +24,11 @@
       "PDFArt/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.6",
-          "Microsoft.NETCore.App": "2.0.0",
-          "SimplePassword.dll": "1.0.0"
+          "Microsoft.EntityFrameworkCore": "2.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.5",
+          "Microsoft.EntityFrameworkCore.Tools": "2.0.2",
+          "Microsoft.NETCore.App": "2.0.0"
         },
         "runtime": {
           "PDFArt.dll": {}
@@ -1625,6 +1628,18 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.2",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Sqlite/2.0.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "2.0.2",
@@ -1653,6 +1668,19 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.2",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Tools/2.0.2": {
@@ -2547,14 +2575,6 @@
             "rid": "win-x86",
             "assetType": "native"
           }
-        }
-      },
-      "SimplePassword.dll/1.0.0": {
-        "runtime": {
-          "lib/net40-full/SimplePassword.dll": {}
-        },
-        "compile": {
-          "lib/net40-full/SimplePassword.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.7": {
@@ -4708,6 +4728,13 @@
       "path": "microsoft.entityframeworkcore.relational/2.0.2",
       "hashPath": "microsoft.entityframeworkcore.relational.2.0.2.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WqPO8M9Ho0CiJ1tnIgWgXoAPt8/oIE8lcELZYbvmiVyr59f395HmHQhGCXti0/DePgPb7N6EHTIgCczRyuqIkg==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.5",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.5.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Sqlite/2.0.2": {
       "type": "package",
       "serviceable": true,
@@ -4728,6 +4755,13 @@
       "sha512": "sha512-368mmlJFauVm1ICn+plKJNm6KSX2jRTuK3zwomZwDAlzxO5kr8MMmbr60e6QM68wk8u0bdQBzTwO7GzfEnzWLA==",
       "path": "microsoft.entityframeworkcore.sqlserver/2.0.2",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5Pzxg+WEzPivrBYur4uRTQt+c3kWOebWq51nkmkuOtK2O5hjCKS3Lw6Mln2iI/ae7rJcvVW6hUd3rCgctFSmmw==",
+      "path": "microsoft.entityframeworkcore.sqlserver.design/1.1.5",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.design.1.1.5.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Tools/2.0.2": {
       "type": "package",
@@ -5288,13 +5322,6 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
-    },
-    "SimplePassword.dll/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wt+1z3y5/3mHvCernUNxsmTOxH+c99rfMAlzFLpWKgFIVWQhDEjd5XIyQ6OgNrn3G/VPhMTM+hFHnT0EYBR0Rg==",
-      "path": "simplepassword.dll/1.0.0",
-      "hashPath": "simplepassword.dll.1.0.0.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_green/1.1.7": {
       "type": "package",
