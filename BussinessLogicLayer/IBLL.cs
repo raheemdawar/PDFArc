@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace PDFArt.BLL
+using PDFArt.Models;
+namespace PDFArt.BussinessLogicLayer
 {
     interface IBLL
     {
-        double applyTax(double value);
+        HomeViewModel getAllBooksAndCatagories();
         
     }
 }

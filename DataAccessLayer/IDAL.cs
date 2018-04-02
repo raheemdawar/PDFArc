@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-namespace PDFArt.DAL
+using PDFArt.DBModels;
+namespace PDFArt.DataAccessLayer
 {
     interface IDAL
     {
-        string getBookNameByID(int id);
+        List<Book> getAllBooks();
+
+        List<Catagory> getAllCatagories();
 
     }
 }
