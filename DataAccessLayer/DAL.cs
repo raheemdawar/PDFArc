@@ -18,5 +18,10 @@ namespace PDFArt.DataAccessLayer
         {
             return null;
         }
+
+        public Book getBookDetailByBookID(int id)
+        {
+            return null;
+        }
     }
 }

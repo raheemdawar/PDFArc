@@ -14,6 +14,7 @@ namespace PDFArt.BussinessLogicLayer
 
         public HomeViewModel getAllBooksAndCatagories()
         {
+
             List<Book> allBooks = _dataAccessLayer.getAllBooks();
             List<Catagory> allCatagories = _dataAccessLayer.getAllCatagories();
             HomeViewModel dto = new HomeViewModel();
@@ -25,10 +26,10 @@ namespace PDFArt.BussinessLogicLayer
                 foreach (var book in allBooks)
                 {
                     //Creating onject for list
-                    BookCustomModel item = new BookCustomModel();
-                    item.BookAuthorName = book.BookAuthorName;
-                    item.BookEdition = book.BookEdition;
-                    item.BookId = book.BookId;
+                    BookCustomModel bookCustomModel = new BookCustomModel();
+                    bookCustomModel.BookAuthorName = book.BookAuthorName;
+                    bookCustomModel.BookEdition = book.BookEdition;
+                    bookCustomModel.BookId = book.BookId;
                    
                     //extracting book image url
                     List<ImageBook> bookImages = book.ImageBook.ToList();
@@ -36,10 +37,10 @@ namespace PDFArt.BussinessLogicLayer
                                            where bookImagesRecord.ImageBookIsActive == true
                                            select bookImagesRecord.ImageBookUrl).FirstOrDefault();
                     //assigning book image url
-                    item.BookImageUrl = BookImageUrl;
+                    bookCustomModel.BookImageUrl = BookImageUrl;
 
                     //adding book custom model in dto 
-                    dto.listOfBooks.Add(item);
+                    dto.listOfBooks.Add(bookCustomModel);
                 }
                 //counting Catagories 
                 
@@ -70,6 +71,23 @@ namespace PDFArt.BussinessLogicLayer
                
             }
             return dto;
+        }
+
+        public BookCustomModel getBookDetailsByBookID(int? id)
+        {
+
+            //
+            if(id>0&&id!=null)
+            {
+                BookCustomModel dto = new BookCustomModel();
+          Book bookDBobject= _dataAccessLayer.getBookDetailByBookID(id.Value);
+                dto.BookAuthorName = bookDBobject.BookAuthorName;
+                dto.BookEdition = bookDBobject.BookEdition;
+                dto.BookId =bookDBobject.BookId;
+                dto.BookName = bookDBobject.BookName;
+                return dto;
+            }
+            return null;
         }
     }
 }

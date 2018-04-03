@@ -10,6 +10,6 @@ namespace PDFArt.DataAccessLayer
         List<Book> getAllBooks();
 
         List<Catagory> getAllCatagories();
-
+        Book getBookDetailByBookID(int id);
     }
 }

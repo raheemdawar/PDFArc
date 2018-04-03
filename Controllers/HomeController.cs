@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PDFArt.BussinessLogicLayer;
 using PDFArt.Models;
+using PDFArt.CustomModel;
 namespace PDFArt.Controllers
 {
     public class HomeController : Controller
@@ -15,6 +16,11 @@ namespace PDFArt.Controllers
          HomeViewModel model=   _bussinessLogicLayer.getAllBooksAndCatagories();
 
 
+            return View(model);
+        }
+        public IActionResult Book(int ?id)
+        {
+            BookCustomModel model = _bussinessLogicLayer.getBookDetailsByBookID(id);
             return View(model);
         }
     }
