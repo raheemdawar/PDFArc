@@ -23,5 +23,15 @@ namespace PDFArt.Controllers
             BookCustomModel model = _bussinessLogicLayer.getBookDetailsByBookID(id);
             return View(model);
         }
+        public IActionResult download(int id)
+        {
+            bool isDownloadable = _bussinessLogicLayer.isDownloadable(id);
+            if(isDownloadable)
+            {
+                string url = _bussinessLogicLayer.downloadBookByBookId(id);
+
+            }
+            return View();
+        }
     }
 }

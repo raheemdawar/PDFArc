@@ -8,3 +8,4 @@ C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.Assembl
 C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.AssemblyInfo.cs
 C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.dll
 C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.pdb
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Debug\netcoreapp2.0\PDFArt.csprojResolveAssemblyReference.cache

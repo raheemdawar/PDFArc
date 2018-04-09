@@ -12,6 +12,17 @@ namespace PDFArt.BussinessLogicLayer
     {
         private IDAL _dataAccessLayer = new DAL();
 
+         string IBLL.downloadBookByBookId(int? bookID)
+        {
+        if(bookID>0&&bookID!=null)
+            {
+                Book bookObject = _dataAccessLayer.getBookDetailByBookID(bookID.Value);
+                return bookObject.bookUrl;
+            }
+            return null;
+
+        }
+
         public HomeViewModel getAllBooksAndCatagories()
         {
 
@@ -88,6 +99,19 @@ namespace PDFArt.BussinessLogicLayer
                 return dto;
             }
             return null;
+        }
+
+        public bool isDownloadable(int? id)
+        {
+         if(id>0&& id!=null)
+            {
+                Book bookObject = _dataAccessLayer.getBookDetailByBookID(id.Value);
+                if(!string.IsNullOrWhiteSpace(bookObject.bookUrl))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

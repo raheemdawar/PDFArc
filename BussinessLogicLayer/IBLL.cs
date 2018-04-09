@@ -10,6 +10,7 @@ namespace PDFArt.BussinessLogicLayer
     {
         HomeViewModel getAllBooksAndCatagories();
         BookCustomModel getBookDetailsByBookID(int ?id);
-        
+        bool isDownloadable(int?id);
+        string downloadBookByBookId(int? bookID);
     }
 }
