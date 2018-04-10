@@ -1,0 +1,7 @@
+C:\Users\Ninja\source\repos\PDFArt\PDFArt
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=PDFArt
+--content-root=C:\Users\Ninja\source\repos\PDFArt\PDFArt
+--file=C:\Users\Ninja\source\repos\PDFArt\PDFArt\Views\Home\coming.cshtml
+--file=C:\Users\Ninja\source\repos\PDFArt\PDFArt\Views\Home\Index.cshtml
+--file=C:\Users\Ninja\source\repos\PDFArt\PDFArt\Views\Shared\_MasterLayout.cshtml

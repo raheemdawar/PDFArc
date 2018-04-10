@@ -113,5 +113,16 @@ namespace PDFArt.BussinessLogicLayer
             }
             return false;
         }
+
+        public bool isContactFormViewable()
+        {
+            return true;
+        }
+
+        public bool addContact(ContactCustomModel model)
+        {
+            //
+            return true;
+        }
     }
 }

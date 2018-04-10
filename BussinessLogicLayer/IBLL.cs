@@ -12,5 +12,7 @@ namespace PDFArt.BussinessLogicLayer
         BookCustomModel getBookDetailsByBookID(int ?id);
         bool isDownloadable(int?id);
         string downloadBookByBookId(int? bookID);
+        bool isContactFormViewable();
+        bool addContact(ContactCustomModel model);
     }
 }

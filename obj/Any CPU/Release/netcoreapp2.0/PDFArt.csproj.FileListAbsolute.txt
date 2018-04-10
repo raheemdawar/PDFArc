@@ -1,0 +1,11 @@
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\bin\Any CPU\Release\netcoreapp2.0\PDFArt.deps.json
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\bin\Any CPU\Release\netcoreapp2.0\PDFArt.runtimeconfig.json
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\bin\Any CPU\Release\netcoreapp2.0\PDFArt.runtimeconfig.dev.json
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\bin\Any CPU\Release\netcoreapp2.0\PDFArt.dll
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\bin\Any CPU\Release\netcoreapp2.0\PDFArt.pdb
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Any CPU\Release\netcoreapp2.0\PDFArt.csprojResolveAssemblyReference.cache
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Any CPU\Release\netcoreapp2.0\PDFArt.csproj.CoreCompileInputs.cache
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Any CPU\Release\netcoreapp2.0\PDFArt.AssemblyInfoInputs.cache
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Any CPU\Release\netcoreapp2.0\PDFArt.AssemblyInfo.cs
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Any CPU\Release\netcoreapp2.0\PDFArt.dll
+C:\Users\Ninja\source\repos\PDFArt\PDFArt\obj\Any CPU\Release\netcoreapp2.0\PDFArt.pdb
