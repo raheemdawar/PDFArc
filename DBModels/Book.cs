@@ -19,7 +19,8 @@ namespace PDFArt.DBModels
         public bool? BookIsActive { get; set; }
         public int? FkUserId { get; set; }
         public int? FkCatagoryId { get; set; }
-        public string bookUrl { get; set; }
+        public string BookUrl { get; set; }
+
         public Catagory FkCatagory { get; set; }
         public User FkUser { get; set; }
         public ICollection<ImageBook> ImageBook { get; set; }

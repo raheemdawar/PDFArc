@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+dv body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.block {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container .searchbar .wrapper {
+    width: 450px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2)
+}
+
+.navbar-container .searchbar .wrapper input {
+    display: inline-block;
+    width: 90%;
+    padding: 1em;
+    font-size: 0.9em;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.navbar-container .searchbar .wrapper i {
+    font-size: 1.4em;
+    color: dodgerblue;
+    padding-top: 0.5em;
+    cursor: pointer;
+}
+
+.navbar-container .searchbar .wrapper i:hover {
+    color: darkred;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+.menu {
+    display: none;
+    border: none;
+    width: 80px;
+    height: 80px;
+    background: white;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0.4em;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.red {
+    color: red;
+}
+
+nav ul li a.green:link,
+nav ul li a.green:visited {
+    color: forestgreen;
+}
+
+nav ul li a.btn-signin:link,
+nav ul li a.btn-signin:visited {
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0.8em;
+    color: white;
+    background: linear-gradient(to top, #0984e3, #74b9ff);
+    border-radius: 4px;
+}
+
+.main-wrapper {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-wrapper .book-col {
+    width: 55%;
+}
+
+.main-wrapper .category-col {
+    width: 35%;
+}
+
+.heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-wrapper h2 {
+    font-family: sans-serif;
+    color: #333;
+    font-weight: normal;
+}
+
+.heading-wrapper ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.heading-wrapper ul li {
+    padding: 0.3em;
+    border: 1px solid #ccc;
+    background: white;
+    font-family: sans-serif;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.heading-wrapper ul li:hover {
+    background: #b2bec3;
+}
+
+.heading-wrapper ul li.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.heading-wrapper ul li.active:hover {
+    background-color: #0984e3;
+}
+
+.heading-wrapper ul li:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+
+.heading-wrapper ul li:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
+}
+
+.closeable {
+    width: 100%;
+    background: white;
+    padding: 1em;
+    position: relative;
+    color: #919191;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.closeable-text {
+    width: 95%;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+.closeable-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.closeable-btn i:hover {
+    color: #333333;
+}
+
+.tag-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tag-slider ul.tags {
+    width: 1400px;
+    list-style-type: none;
+    transition: all .6s;
+}
+
+.tag-slider ul.tags:hover {
+    transform: translateX(-25%);
+}
+
+.tag-slider ul.tags li.tag {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    margin: 0 0.5em;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tag-slider ul.tags li.tag a:link,
+.tag-slider ul.tags li.tag a:visited {
+    text-decoration: none;
+    color: #e5e5e5;
+}
+
+.turquoise {
+    background: #1abc9c;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+.orange {
+    background-color: #d35400;
+}
+
+.red-bg {
+    background-color: #e74c3c;
+}
+
+.dark-blue {
+    background-color: #34495e;
+}
+
+.row {
+    margin: 2em 0;
+}
+
+.book {
+    background: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.book::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.book img {
+    display: block;
+    width: 80px;
+    float: left;
+    transition: all .4s;
+}
+
+.book img:hover {
+    transform: scale(2);
+}
+
+.book .book-detail {
+    width: 85%;
+    float: left;
+    padding: 0.5em;
+    line-height: 1.8em;
+}
+
+.book .book-detail a {
+    text-decoration: none;
+    font-size: 0.91em;
+    color: dodgerblue;
+}
+
+.book .book-detail .green {
+    color: green;
+}
+
+.book .book-detail .book-description {
+    font-size: 0.83em;
+    color: #a1a1a1;
+}
+
+.category-col .category-wrapper {
+    display: flex;
+}
+
+.category-col .category-wrapper .col {
+    width: 50%;
+}
+
+.category-col .category-wrapper .col {
+    list-style-type: none;
+}
+
+.category-col .category-wrapper .col li {
+    margin: 1em 0;
+}
+
+.category-col .category-wrapper .col li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.category-col .category-wrapper .col img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+}
+
+.category-col .category-wrapper .col span {
+    display: block;
+    line-height: 40px;
+}
+
+
+.contact-wrapper h2 {
+    font-weight: 300;
+    color: dodgerblue;
+    font-size: 1.4em;
+}
+
+.contact-wrapper .subcription {
+    margin: 0.5em 0;
+    width: 70%;
+    height: 35px;
+    border: 2px solid red;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-wrapper .subcription input {
+    width: 80%;
+    height: 100%;
+    padding: 0 0.5em;
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.contact-wrapper .subcription button {
+    display: block;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: none;
+    border: none;
+}
+
+
+.contact-wrapper select {
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1040px) {
+
+    body {
+        background-color: red;
+    }
+
+    .searchbar {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 545px) {
+    body {
+        background-color: green;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .main-wrapper .book-col {
+        width: 100%;
+    }
+
+    .main-wrapper .category-col {
+        width: 100%;
+    }
+}

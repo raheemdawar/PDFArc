@@ -8,6 +8,7 @@ namespace PDFArt.DBModels
     {
         public virtual DbSet<Book> Book { get; set; }
         public virtual DbSet<Catagory> Catagory { get; set; }
+        public virtual DbSet<Contact> Contact { get; set; }
         public virtual DbSet<ImageBook> ImageBook { get; set; }
         public virtual DbSet<ImageCatagory> ImageCatagory { get; set; }
         public virtual DbSet<User> User { get; set; }
@@ -17,7 +18,7 @@ namespace PDFArt.DBModels
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-4VHAAHN;Initial Catalog=PDFART;Integrated Security=True");
+                optionsBuilder.UseSqlServer(@"Server=DESKTOP-4VHAAHN;Database=PDFART;Trusted_Connection=True;");
             }
         }
 
@@ -48,6 +49,10 @@ namespace PDFArt.DBModels
                 entity.Property(e => e.BookName)
                     .HasColumnName("Book_Name")
                     .HasMaxLength(100);
+
+                entity.Property(e => e.BookUrl)
+                    .HasColumnName("bookUrl")
+                    .HasMaxLength(50);
 
                 entity.Property(e => e.FkCatagoryId).HasColumnName("FK_Catagory_ID");
 
@@ -81,6 +86,31 @@ namespace PDFArt.DBModels
                 entity.Property(e => e.CatagoryName)
                     .HasColumnName("Catagory_Name")
                     .HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<Contact>(entity =>
+            {
+                entity.Property(e => e.ContactId).HasColumnName("Contact_ID");
+
+                entity.Property(e => e.ContactCreateDate)
+                    .HasColumnName("Contact_CreateDate")
+                    .HasColumnType("datetime");
+
+                entity.Property(e => e.ContactEmail)
+                    .HasColumnName("Contact_Email")
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.ContactIsActive).HasColumnName("Contact_isActive");
+
+                entity.Property(e => e.ContactMessage).HasColumnName("Contact_Message");
+
+                entity.Property(e => e.ContactName)
+                    .HasColumnName("Contact_Name")
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.ContactUpdateDate)
+                    .HasColumnName("Contact_UpdateDate")
+                    .HasColumnType("datetime");
             });
 
             modelBuilder.Entity<ImageBook>(entity =>

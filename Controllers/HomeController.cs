@@ -6,10 +6,7 @@ namespace PDFArt.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult coming()
-        {
-            return View();
-        }
+     
         public IActionResult contact()
         {
             bool isViewAble = _bussinessLogicLayer.isContactFormViewable();

@@ -8,20 +8,22 @@ namespace PDFArt.DataAccessLayer
 {
     public class DAL : IDAL
     {
-        
+
+       private PDFARTContext _db = new PDFARTContext();
         public List<Book> getAllBooks()
         {
-            return null;
+           return _db.Book.ToList();
         }
 
         public List<Catagory> getAllCatagories()
         {
-            return null;
+            return _db.Catagory.ToList();
         }
 
         public Book getBookDetailByBookID(int id)
         {
-            return null;
+            Book objectBook = _db.Book.Find(id);
+            return objectBook;
         }
     }
 }

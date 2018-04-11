@@ -27,6 +27,48 @@
   <ItemGroup>
     <Folder Include="Helpers\" />
     <Folder Include="Extensions\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\fontawesome\less\fa-brands.less" />
+    <None Include="wwwroot\css\fontawesome\less\fa-regular.less" />
+    <None Include="wwwroot\css\fontawesome\less\fa-solid.less" />
+    <None Include="wwwroot\css\fontawesome\less\fontawesome.less" />
+    <None Include="wwwroot\css\fontawesome\less\_animated.less" />
+    <None Include="wwwroot\css\fontawesome\less\_bordered-pulled.less" />
+    <None Include="wwwroot\css\fontawesome\less\_core.less" />
+    <None Include="wwwroot\css\fontawesome\less\_fixed-width.less" />
+    <None Include="wwwroot\css\fontawesome\less\_icons.less" />
+    <None Include="wwwroot\css\fontawesome\less\_larger.less" />
+    <None Include="wwwroot\css\fontawesome\less\_list.less" />
+    <None Include="wwwroot\css\fontawesome\less\_mixins.less" />
+    <None Include="wwwroot\css\fontawesome\less\_rotated-flipped.less" />
+    <None Include="wwwroot\css\fontawesome\less\_screen-reader.less" />
+    <None Include="wwwroot\css\fontawesome\less\_stacked.less" />
+    <None Include="wwwroot\css\fontawesome\less\_variables.less" />
+    <None Include="wwwroot\css\fontawesome\scss\fa-brands.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\fa-regular.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\fa-solid.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\fontawesome.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_animated.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_core.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_fixed-width.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_icons.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_larger.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_list.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_mixins.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_screen-reader.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_stacked.scss" />
+    <None Include="wwwroot\css\fontawesome\scss\_variables.scss" />
+    <None Include="wwwroot\css\fontawesome\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\css\fontawesome\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\css\fontawesome\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\css\fontawesome\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\css\fontawesome\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\css\fontawesome\webfonts\fa-solid-900.woff2" />
   </ItemGroup>
 
 </Project>

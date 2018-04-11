@@ -17,7 +17,7 @@ namespace PDFArt.BussinessLogicLayer
         if(bookID>0&&bookID!=null)
             {
                 Book bookObject = _dataAccessLayer.getBookDetailByBookID(bookID.Value);
-                return bookObject.bookUrl;
+                return bookObject.BookUrl;
             }
             return null;
 
@@ -106,7 +106,7 @@ namespace PDFArt.BussinessLogicLayer
          if(id>0&& id!=null)
             {
                 Book bookObject = _dataAccessLayer.getBookDetailByBookID(id.Value);
-                if(!string.IsNullOrWhiteSpace(bookObject.bookUrl))
+                if(!string.IsNullOrWhiteSpace(bookObject.BookUrl))
                 {
                     return true;
                 }

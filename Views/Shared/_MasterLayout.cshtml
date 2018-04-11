@@ -1,13 +1,41 @@
 ﻿<!DOCTYPE html>
-
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Pdf Art</title>
+    <meta charset="UTF-8">
+    <title>BooksTrove</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome-all.min.css">
 </head>
+
 <body>
-    <div>
-        @RenderBody()
-    </div>
+    <header>
+        <div class="navbar-container block">
+            <div class="logo">
+                <img src="images/logo.PNG" height="150px;" alt="">
+            </div>
+            <div class="searchbar">
+                <div class="wrapper">
+                    <input class="sb" type="text" placeholder="Search for books, tutorials, manuals and authors">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <nav>
+                <button class="menu"><i class="fas fa-bars"></i></button>
+                <ul>
+                    <li><a href="#"><i class="fas fa-heart red"></i> Donate</a></li>
+                 
+                    <li><a href="#" class="btn-signin">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+       @RenderBody()
+    </main>
+    <footer></footer>
 </body>
+
 </html>

@@ -1,9 +1,115 @@
-﻿
+﻿@using PDFArt.Models;
+@model HomeViewModel
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_MasterLayout.cshtml";
 }
 
-<h2>Index</h2>
+<div class="main-wrapper block">
+    <div class="book-col">
+        @if (Model != null)
+    {
+        if (Model.listOfBooks != null)
+        {
+            if (Model.listOfBooks.Count > 0)
+            {
+                foreach (var book in Model.listOfBooks)
+                {
+
+                    <div class="row">
+
+                        <div class="book">
+                            <img src="@book.BookImageUrl" alt="">
+                            <div class="book-detail">
+                                <a href="">
+                                    <h2 class="book-name">@book.BookName</h2>
+                                </a>
+
+                                <p class="book-info">
+                                    <span class="green">@book.BookAuthorName</span>
+                                    <span class="green">-</span>
+                                    <span class="green">@book.BookEdition</span>
+
+                                    <button style="margin-right:50px;">Download</button>
+                                </p>
+                                <p class="book-description">
+                                    volume. The principles he teaches in The Seven Habits of Highly Effective People have made a real
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+            }
+
+        }
+
+
+    }
+    else
+    {
+        <h1 style="text-align:center;color:red;">No Books Record Added Yet</h1>
+
+   }
+
+
+
+}
+
+    </div>
+    <div class="category-col">
+        <div class="row">
+            <div class="category-wrapper">
+                @if (Model != null)
+    {
+        if (Model.listOfCatagories != null)
+        {
+            if (Model.listOfCatagories.Count > 0)
+            {
+                <ul class="col">
+                    @foreach (var catagory in Model.listOfCatagories)
+    {
+                <li>
+                    <a href="">
+                        <img src="@catagory.catagoryImageUrl" alt=""><span>@catagory.CatagoryName</span>
+                    </a>
+                </li>
+
+}
+
+                </ul>
+
+}
+
+}
+else
+{
+            <h3>No Catagories Added yet</h3>
+
+}
+
+}
+
+            
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact-wrapper">
+                <h2>Get Top Trending Free Books in Your Inbox</h2>
+                <div class="subcription">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+                <blockquote>
+                    "Raise your words, not voice. It is rain that grows flowers, not thunder." -Rumi
+                </blockquote>
+                <select name="" id="">
+                    <option value="">Select Language</option>
+                    <option value="">English</option>
+                    <option value="">Urdu</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
 
 
